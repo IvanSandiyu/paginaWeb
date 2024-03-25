@@ -1,0 +1,96 @@
+body{
+  /*background-image: linear-gradient(to bottom, #030637 ,#1B1A55 , #22092C);*/
+  background-color: #242038;
+  
+}
+
+  @media (min-width:480px)  { 
+  /* smartphones, Android phones, landscape iPhone */ 
+  }
+  @media (min-width:600px)  { 
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+  }
+  @media (min-width:801px)  { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  }
+  @media (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */ 
+  }
+  @media (min-width:1281px) { 
+  /* hi-res laptops and desktops */ 
+  }
+h1{
+  color: #cac4ce ;
+  text-align: center;
+  align-self: center;
+  font-family: 'Varela', sans-serif;
+  animation: glitch-animation 1s infinite linear alternate-reverse;
+}
+p{
+  color: #cac4ce ;
+  font-family: 'Varela', sans-serif;
+  text-align: center;
+}
+@keyframes glitch-animation {
+  0% {
+    text-shadow: -10px 0 red;
+  }
+  14% {
+    text-shadow: 10px 0 blue;
+  }
+  28% {
+    text-shadow: -10px 0 green;
+  }
+  42% {
+    text-shadow: 10px 0 yellow;
+  }
+  70% {
+    text-shadow: 0 0 4px white;
+  }
+  100% {
+    text-shadow: 0 0 4px white;
+  }
+}
+
+@keyframes borderPoint  {
+  0% {
+      box-shadow: inset 0 0 0 0 #f7ece1; /* El punto comienza sin tamaño */
+  }
+  
+  100% {
+      box-shadow: inset 0 0 10px 2px #f7ece1; /* El punto se expande a 10px con un borde de 2px */
+  }
+}
+
+
+
+
+
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+}
+.contenido {
+  display: flex;
+  width: 100%;
+
+}
+
+.div-proyectos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-contacto{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 55%;
+  margin-top: 0;
+}

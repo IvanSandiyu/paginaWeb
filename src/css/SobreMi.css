@@ -1,0 +1,32 @@
+.rectangulo{
+    display: flex;
+    border: 2px solid transparent ; /* Borde transparente para mantener el espacio para la sombra */
+    animation: borderPoint 2s infinite linear; /* Aplicamos la animación al elemento */
+    /* border: 1px solid #9067c6; */
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+.texto-sobre-mi { /*H1*/
+    position:absolute;
+    font-size: 30px;
+    z-index: 1;
+    top: 50%; /* Coloca el punto superior del texto en el centro vertical */
+    left: 50%; /* Coloca el punto izquierdo del texto en el centro horizontal */
+    transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+    margin: 0; /* Elimina cualquier margen predeterminado */
+
+  }
+  .sobre-mi {
+    gap: 60px;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+  }
+  .rectangulo:hover .sobre-mi{
+    opacity: 1;
+  }
+  .rectangulo:hover .texto-sobre-mi{
+    opacity: 0;
+
+  }
+  

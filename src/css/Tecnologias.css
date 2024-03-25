@@ -1,0 +1,56 @@
+.cuadrado {
+    display: flex;
+    border: 2px solid transparent ; /* Borde transparente para mantener el espacio para la sombra */
+    animation: borderPoint 2s infinite linear; /* Aplicamos la animación al elemento */
+    /* border: 1px solid #9067c6; */
+    width: 40%; /* Ancho del cuadrado */
+    margin-right: auto; /* Espacio entre este cuadrado y el componente adyacente */
+    position: relative; /* Posicionamiento relativo para el contenedor */
+  }
+  .texto {
+    position: absolute; /* Posicionamiento absoluto para el texto */
+    top: 25%; /* Centra el texto verticalmente */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición del texto */
+    font-size: 30px;
+    z-index: 1; /* Asegura que el texto aparezca por delante de las imágenes */
+  }
+  
+  .fila {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-direction: row; /* Cambiar la dirección principal a fila */
+    opacity: 0; /* Oculta las imágenes inicialmente */
+    transition: opacity 0.5s ease-in-out; /* Define una transición suave para la opacidad de las imágenes */
+  }
+  
+  .cuadrado:hover .fila {
+    opacity: 1; /* Muestra las imágenes al pasar el mouse sobre el contenedor */
+  }
+  .cuadrado:hover .texto {
+    opacity: 0; /* Oculta el texto al pasar el mouse sobre el contenedor */
+  }
+  
+  
+
+#csharp{
+    width: 10%;
+}
+#java{
+    width: 10%;
+}
+#js{
+    width: 10%;
+}
+#react{
+    width: 20%;
+}
+#sql{
+    width: 10%;
+}
+
+#csharp:hover, #java:hover, #js:hover, #react:hover, #sql:hover{
+  transform: scale(1.2);
+}

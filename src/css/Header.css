@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    justify-content: center;
+    border: 2px solid transparent ; /* Borde transparente para mantener el espacio para la sombra */
+    animation: borderPoint 2s infinite linear; /* Aplicamos la animación al elemento */
+    /* border: 1px solid #9067c6; */
+}
+.h1-header{
+    text-align: center;
+    align-items: center;
+    align-self: center;
+
+}
+@keyframes borderPoint  {
+    0% {
+        box-shadow: inset 0 0 10px 0 #9067c6; /* El punto comienza sin tamaño */
+    }
+    
+    100% {
+        box-shadow: inset 0 0 10px 2px #9067c6; /* El punto se expande a 10px con un borde de 2px */
+    }
+  }
+  

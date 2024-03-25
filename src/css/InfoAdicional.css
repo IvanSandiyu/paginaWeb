@@ -1,0 +1,39 @@
+.info {
+    display: flex;
+    flex: 0 0 30%;
+    padding: 10px;
+    border: 2px solid transparent ; /* Borde transparente para mantener el espacio para la sombra */
+    animation: borderPoint 2s infinite linear; /* Aplicamos la animación al elemento */
+    /* border: 1px solid #9067c6; */
+    min-width: 70vh;
+    position: relative; /* Posicionamiento relativo para el contenedor */
+  }
+  
+  .texto-info {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    z-index: 1;
+    
+  }
+  
+  .mas-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-direction: row;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+  }
+  
+  .info:hover .mas-info {
+    opacity: 1;
+  }
+  
+  .info:hover .texto-info {
+    opacity: 0;
+  }
+  
