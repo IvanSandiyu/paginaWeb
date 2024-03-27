@@ -41,15 +41,7 @@ p{
   28% {
     text-shadow: -10px 0 green;
   }
-  42% {
-    text-shadow: 10px 0 yellow;
-  }
-  70% {
-    text-shadow: 0 0 4px white;
-  }
-  100% {
-    text-shadow: 0 0 4px white;
-  }
+  
 }
 
 @keyframes borderPoint  {
