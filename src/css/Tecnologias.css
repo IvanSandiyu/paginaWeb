@@ -17,14 +17,14 @@
   }
   
   .fila {
-    display: flex;
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
     justify-content: center;
-    gap: 60px;
-    flex-direction: row; /* Cambiar la dirección principal a fila */
-    opacity: 0; /* Oculta las imágenes inicialmente */
-    transition: opacity 0.5s ease-in-out; /* Define una transición suave para la opacidad de las imágenes */
-  }
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
   
   .cuadrado:hover .fila {
     opacity: 1; /* Muestra las imágenes al pasar el mouse sobre el contenedor */

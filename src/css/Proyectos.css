@@ -1,7 +1,6 @@
 .proyectos{
     display: flex;
     flex-direction: column;
-    height: 100vh; /* La columna toma toda la altura disponible de la ventana */
     border: 2px solid transparent ; /* Borde transparente para mantener el espacio para la sombra */
     animation: borderPoint 2s infinite linear; /* Aplicamos la animación al elemento */
     /* border: 1px solid #9067c6;  */
@@ -26,27 +25,16 @@
 .texto-java,
 .texto-c {
   position: absolute;
-  left: 15%;
-  transform: translate(-50%, -50%);
   background-color: black;
-  color: white; /* Color del texto */
+  color: white;
   border: 1px solid;
-  opacity: 0; /* El texto comienza invisible */
-  transition: opacity 1.0s ease-in; /* Transición suave para la opacidad */
-  text-align: center; /* Alineación del texto en el centro */
+  opacity: 0;
+  transition: opacity 1.0s ease-in;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.proyectos .crud .texto-crud {
-  top: 30vh;
-}
-
-.texto-java {
-  top: 48vh;
-}
-
-.texto-c {
-  top: 67vh;
-}
 
   
   .crud:hover .texto-crud {

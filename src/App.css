@@ -80,9 +80,19 @@ p{
 .info-contacto{
   display: flex;
   margin: auto;
+  flex-basis: 33%;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   margin-right: 55%;
   margin-top: 0;
+}
+.crud img#crud {
+  min-width: 100%;
+}
+
+.div-proyectos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }

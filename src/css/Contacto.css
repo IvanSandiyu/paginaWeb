@@ -43,4 +43,11 @@
   .contacto:hover .texto-contacto {
     opacity: 0;
   }
-  
+  .bannerCsharp, .crud, .java, .proyectos {
+    animation: borderPoint 2s linear infinite;
+    border: 2px solid #0000;
+    flex-basis: 33% !important;
+  }
+  .bannerCsharp, .crud, .java {
+    position: relative;
+  }
