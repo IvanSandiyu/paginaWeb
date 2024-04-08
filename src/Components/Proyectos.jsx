@@ -4,19 +4,27 @@ import java from "../imagenes/java.jpg";
 import bannerC from "../imagenes/bannerC.jpg";
 
 const AbrirGit = () => {
-  const enlaceTemporal = document.createElement('a');
+  const enlaceTemporal = document.createElement("a");
   // Asignar la URL del archivo a descargar al atributo 'href' del enlace
-  enlaceTemporal.href = "https://github.com/IvanSandiyu/CRUD"
-  enlaceTemporal.target = "_blank"
+  enlaceTemporal.href = "https://github.com/IvanSandiyu/CRUD";
+  enlaceTemporal.target = "_blank";
   enlaceTemporal.click();
 };
 const AbrirGitJava = () => {
-  const enlaceTemporal = document.createElement('a');
+  const enlaceTemporal = document.createElement("a");
   // Asignar la URL del archivo a descargar al atributo 'href' del enlace
-  enlaceTemporal.href = "https://github.com/IvanSandiyu/Crud-con-Java"
-  enlaceTemporal.target = "_blank"
+  enlaceTemporal.href = "https://github.com/IvanSandiyu/Crud-con-Java";
+  enlaceTemporal.target = "_blank";
   enlaceTemporal.click();
-}
+};
+
+const AbrirGitC = () => {
+  const enlaceTemporal = document.createElement("a");
+  // Asignar la URL del archivo a descargar al atributo 'href' del enlace
+  enlaceTemporal.href = "https://github.com/IvanSandiyu/Alta.Baja.Mesa";
+  enlaceTemporal.target = "_blank";
+  enlaceTemporal.click();
+};
 function Proyectos() {
   return (
     <>
@@ -31,13 +39,16 @@ function Proyectos() {
           <p className="texto-java">
             Proyectos realizados con Java IDE Ecplipse
           </p>
-          <img src={java} alt="java" id="java-proyecto" onClick={AbrirGitJava} />
+          <img
+            src={java}
+            alt="java"
+            id="java-proyecto"
+            onClick={AbrirGitJava}
+          />
         </div>
         <div className="bannerCsharp">
-        <p className="texto-c">
-            Proyectos realizados con C#
-          </p>
-          <img src={bannerC} alt="c#" id="c-proyecto" />
+          <p className="texto-c">Proyectos realizados con C#</p>
+          <img src={bannerC} alt="c#" id="c-proyecto" onClick={AbrirGitC} />
         </div>
       </div>
     </>
