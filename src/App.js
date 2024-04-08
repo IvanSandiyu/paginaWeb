@@ -23,9 +23,11 @@ function App() {
         <div className='info-contacto'>
           <InformacionAdicional />
           <Contacto />
-          <Actualizacion/>
+          <Actualizacion />
         </div>
       </div>
+
+     
 
 
     </div>

@@ -34,40 +34,65 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-
   
-  .crud:hover .texto-crud {
-    opacity: 1; /* El texto se vuelve visible al pasar el mouse sobre la imagen */
-    
-  }
-  .crud:hover #crud{
-    opacity: 0.5;
-    transition: opacity 0.9s ease-in; /* Transición suave para la opacidad */
-    transform: scale(0.99);
-    
+.crud:hover .texto-crud {
+  opacity: 1; /* El texto se vuelve visible al pasar el mouse sobre la imagen */
+  
+}
+.crud:hover #crud{
+  opacity: 0.5;
+  transition: opacity 0.9s ease-in; /* Transición suave para la opacidad */
+  transform: scale(0.99);
+  
+}
+
+.java:hover .texto-java {
+  opacity: 1; /* El texto se vuelve visible al pasar el mouse sobre la imagen */
+  
+}
+.java:hover #java-proyecto{
+  
+  opacity: 0.5;
+  transition: opacity 0.9s ease-in; /* Transición suave para la opacidad */
+  transform: scale(0.99);
+  
+}
+
+.bannerCsharp:hover .texto-c {
+  opacity: 1; /* El texto se vuelve visible al pasar el mouse sobre la imagen */
+  
+}
+.bannerCsharp:hover #c-proyecto{
+  opacity: 0.5;
+  transition: opacity 0.9s ease-in; /* Transición suave para la opacidad */
+  transform: scale(0.99);
+}
+@media only screen and (max-width: 768px) {
+  .proyectos {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .java:hover .texto-java {
-    opacity: 1; /* El texto se vuelve visible al pasar el mouse sobre la imagen */
-    
+  .crud,
+  .java,
+  .bannerCsharp {
+    min-width: 100vw;
+    max-width: 100vw; 
   }
-  .java:hover #java-proyecto{
-    
-    opacity: 0.5;
-    transition: opacity 0.9s ease-in; /* Transición suave para la opacidad */
-    transform: scale(0.99);
-    
-  }
-
+  .crud:hover .texto-crud,
+  .java:hover .texto-java,
   .bannerCsharp:hover .texto-c {
-    opacity: 1; /* El texto se vuelve visible al pasar el mouse sobre la imagen */
-    
+  opacity: 1;
+}
+
+  #crud,
+  #java-proyecto,
+  #c-proyecto {
+    border: none;
   }
-  .bannerCsharp:hover #c-proyecto{
-    opacity: 0.5;
-    transition: opacity 0.9s ease-in; /* Transición suave para la opacidad */
-    transform: scale(0.99);
-  }
+
+}
+
+
 
 

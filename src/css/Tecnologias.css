@@ -54,3 +54,23 @@
 #csharp:hover, #java:hover, #js:hover, #react:hover, #sql:hover{
   transform: scale(1.2);
 }
+@media only screen and (max-width: 768px) {
+  .cuadrado {
+    width: 40%;
+  }
+  .fila {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .texto{
+    margin-top: 25%;
+    writing-mode: vertical-rl; /* vertical-rl para que se lea verticalmente de derecha a izquierda */
+    text-orientation: upright; /* Esto asegura que el texto se lea verticalmente correctamente */
+    font-size: 100%;
+  }
+}
+/* @media only screen and (min-width: 1200px) {
+  .cuadrado {
+    width: 50%;
+  }
+} */

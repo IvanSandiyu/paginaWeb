@@ -11,7 +11,7 @@ function SobreMi() {
           oportunidades de pasantías o trabajo en este campo para obtener
           experiencia práctica y avanzar en mi carrera profesional. Me considero
           una persona responsable, organizada y resolutiva, con habilidades
-          demostradas para enfrentar desafíos y alcanzar objetivos
+          demostradas para enfrentar desafíos y alcanzar objetivos.
         </p>
       </div>
     </>

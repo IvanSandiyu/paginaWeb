@@ -10,6 +10,13 @@ const AbrirGit = () => {
   enlaceTemporal.target = "_blank"
   enlaceTemporal.click();
 };
+const AbrirGitJava = () => {
+  const enlaceTemporal = document.createElement('a');
+  // Asignar la URL del archivo a descargar al atributo 'href' del enlace
+  enlaceTemporal.href = "https://github.com/IvanSandiyu/Crud-con-Java"
+  enlaceTemporal.target = "_blank"
+  enlaceTemporal.click();
+}
 function Proyectos() {
   return (
     <>
@@ -24,7 +31,7 @@ function Proyectos() {
           <p className="texto-java">
             Proyectos realizados con Java IDE Ecplipse
           </p>
-          <img src={java} alt="java" id="java-proyecto" />
+          <img src={java} alt="java" id="java-proyecto" onClick={AbrirGitJava} />
         </div>
         <div className="bannerCsharp">
         <p className="texto-c">
