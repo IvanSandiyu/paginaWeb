@@ -51,3 +51,9 @@
   .bannerCsharp, .crud, .java {
     position: relative;
   }
+
+  @media only screen and (max-width: 768px) {
+    .contacto {
+        flex: 0 0 100%; /* Cambia el ancho del elemento a ocupar todo el ancho disponible */
+    }
+}

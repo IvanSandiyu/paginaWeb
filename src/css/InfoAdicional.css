@@ -39,22 +39,22 @@
   
   @media only screen and (max-width: 768px) {
     .info {
-      flex: 0 0 100%;
-      min-width: 100%;
+        flex: 0 0 100%; /* Cambia el ancho del elemento a ocupar todo el ancho disponible */
     }
+}
+
+
+
+
   
-    .texto-info {
-      top: 25%;
-    }
-  
-    .mas-info {
-      flex-direction: column;
-      gap: 20px;
-    }
+/* /* @media only screen and (max-width: 768px) {
+
+.info {
+  max-width: 40%;
   }
-  @media only screen and (max-width: 768px) {
-    .info {
-      border: none;
-    }
-  }
-  
+}
+.mas-info{
+  font-size: auto;
+} */
+
+   

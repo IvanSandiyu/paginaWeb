@@ -165,12 +165,6 @@ p{
 .crud img#crud {
   min-width: 100%;
 }
-
-/* .div-proyectos {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-} */
 @media only screen and (max-width: 768px) {
  
   .div-proyectos {
@@ -179,7 +173,37 @@ p{
 
   .info-contacto {
     width: 100%;
+    
   }
 }
 
 
+
+
+ /* @media only screen and (max-width: 768px) {
+  .info-contacto{
+    display:flex;
+    flex-direction:column;
+  
+  }
+} */
+
+  /*
+  .info,
+  .contacto,
+  .actualizacion {
+      flex: 0 0 100%; /* Cambia el ancho del elemento a ocupar todo el ancho disponible 
+  }
+
+  .info .texto-info,
+  .contacto .texto-contacto {
+      font-size: 20px; /* Cambia el tamaño del texto para adaptarse mejor a pantallas pequeñas 
+  }
+} */
+
+
+/* .div-proyectos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+} */

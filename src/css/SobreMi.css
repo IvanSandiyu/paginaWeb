@@ -38,6 +38,9 @@
     .texto-sobre-mi{
       font-size: auto;
     }
+    .mas-info{
+      font-size: auto;
+    }
     
   }
 
@@ -45,7 +48,6 @@
   @media only screen and (min-width: 768px) {
     .rectangulo {
       width: 100%;
-      
     }
   }
   

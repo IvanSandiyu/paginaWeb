@@ -3,6 +3,7 @@
     flex-direction: column;
     border: 2px solid transparent ; /* Borde transparente para mantener el espacio para la sombra */
     animation: borderPoint 2s infinite linear; /* Aplicamos la animación al elemento */
+    margin-block-end: auto;
     /* border: 1px solid #9067c6;  */
 }
 
@@ -70,29 +71,29 @@
 @media only screen and (max-width: 768px) {
   .proyectos {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    margin-block-end: auto;
   }
 
   .crud,
   .java,
   .bannerCsharp {
     min-width: 100vw;
-    max-width: 100vw; 
+    max-width: 100vw;  
   }
+
   .crud:hover .texto-crud,
   .java:hover .texto-java,
   .bannerCsharp:hover .texto-c {
   opacity: 1;
 }
-
-  #crud,
+}
+  /* #crud,
   #java-proyecto,
   #c-proyecto {
     border: none;
-  }
-
+  } 
 }
-
-
+*/
 
 
