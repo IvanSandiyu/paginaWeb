@@ -2,14 +2,13 @@
     display: flex;
     border: 2px solid transparent ; /* Borde transparente para mantener el espacio para la sombra */
     animation: borderPoint 2s infinite linear; /* Aplicamos la animación al elemento */
-    /* border: 1px solid #9067c6; */
     width: 40%; /* Ancho del cuadrado */
     margin-right: auto; /* Espacio entre este cuadrado y el componente adyacente */
     position: relative; /* Posicionamiento relativo para el contenedor */
   }
   .texto {
     position: absolute; /* Posicionamiento absoluto para el texto */
-    top: 25%; /* Centra el texto verticalmente */
+    top: 30%; /* Centra el texto verticalmente */
     left: 50%; /* Centra el texto horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta la posición del texto */
     font-size: 30px;
@@ -20,10 +19,12 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 10%;
+    gap: 5%;
     justify-content: center;
     opacity: 0;
     transition: opacity .5s ease-in-out;
+    animation: bounce 1s infinite; /* Ajusta la duración del rebote */
+    /* animation: scroll 10s infinite linear; */
 }
   
   .cuadrado:hover .fila {
@@ -33,25 +34,35 @@
     opacity: 0; /* Oculta el texto al pasar el mouse sobre el contenedor */
   }
   
-#csharp{
+  #csharp,
+  #java,
+  #js,
+  #sql {
     width: 10%;
-}
-#java{
-    width: 10%;
-}
-#js{
-    width: 10%;
-}
-#react{
-    width: 20%;
-}
-#sql{
-    width: 10%;
-}
+  }
+  #react{width:20%;margin-right: -3%;}
+  #js{margin-right: -3%;}
 
 #csharp:hover, #java:hover, #js:hover, #react:hover, #sql:hover{
   transform: scale(1.2);
 }
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30px); /* Ajusta la distancia del rebote */
+  }
+}
+
+/* @keyframes scroll{
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+} */
 @media only screen and (max-width: 768px) {
   .cuadrado {
     width: 40%;
