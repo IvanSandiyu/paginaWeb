@@ -4,56 +4,7 @@ body{
   
 }
 
-/* @media only screen and (max-width:480px)  { 
-  .contenido,
-  .div-proyectos{
-    min-width: 40%;
-    flex-direction: column;
-  }
-  .info-contacto {
-    flex-basis: 100%; /* Utiliza todo el ancho disponible para .info-contacto en pantallas pequeñas 
-    
-  } 
-  h1,
-  p{
-    text-transform: lowercase;
-    font-size: auto;
-  } 
- smartphones, Android phones, landscape iPhone 
-}
-@media only screen and (max-width: 768px) {
-  .contenido {
-    flex-direction: column;
-    align-items: center;
-  }
-}*/
 
-  /* @media only screen and (min-width: 768px) {
-    .container {
-      flex-direction: row;
-    }
-    .info-contacto {
-      flex-basis: 20%; 
-      margin-right: 0%; 
-    }
-  } */
-  /* @media screen and (min-width: 768px) and (max-width: 1024px) { 
-    .container .contenido .div-proyectos .info-contacto{
-      flex-direction: row;
-    } 
-  
-  } */
-  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-
-  /* @media screen and (min-width: 1024px) {  
-  } */
- /* Media query para resolución de 1920x1080 */
-/* @media only screen and (min-width: 1600px) and (max-width: 1920px) {
-  .info-contacto {
-    flex-basis: 20%; /* Ajusta el ancho del elemento .info-contacto para la resolución específica 
-    margin-right: 3%;  Ajusta el margen derecho para la resolución específica 
-  }
-} */
 h1{
   color: #cac4ce ;
   text-align: center;
@@ -84,18 +35,7 @@ p{
   font-family: 'Varela', sans-serif;
   text-align: center;
 }
-/* @keyframes glitch-animation {
-  0% {
-    text-shadow: -10px 0 red;
-  }
-  14% {
-    text-shadow: 10px 0 blue;
-  }
-  28% {
-    text-shadow: -10px 0 green;
-  }
-  
-} */
+
 
 @keyframes borderPoint  {
   0% {
@@ -165,6 +105,7 @@ p{
 .crud img#crud {
   min-width: 100%;
 }
+
 @media only screen and (max-width: 768px) {
  
   .div-proyectos {
@@ -180,30 +121,4 @@ p{
 
 
 
- /* @media only screen and (max-width: 768px) {
-  .info-contacto{
-    display:flex;
-    flex-direction:column;
-  
-  }
-} */
 
-  /*
-  .info,
-  .contacto,
-  .actualizacion {
-      flex: 0 0 100%; /* Cambia el ancho del elemento a ocupar todo el ancho disponible 
-  }
-
-  .info .texto-info,
-  .contacto .texto-contacto {
-      font-size: 20px; /* Cambia el tamaño del texto para adaptarse mejor a pantallas pequeñas 
-  }
-} */
-
-
-/* .div-proyectos {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-} */

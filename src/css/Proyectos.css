@@ -9,6 +9,7 @@
 
 .crud,
 .java,
+.bannerASP,
 .bannerCsharp
 {
     min-width: 60vh ;
@@ -16,11 +17,23 @@
     animation: borderPoint 2s infinite linear; /* Aplicamos la animación al elemento */
     /* border: 1px solid #9067c6; */
 }
-#crud, #java-proyecto, #c-proyecto
+
+#crud, #java-proyecto, #c-proyecto, #asp-proyecto
 {
     max-width: 100%; 
     height: 100%;
     cursor: pointer;
+}
+.texto-asp{
+  position: absolute;
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  opacity: 0;
+  transition: opacity 1.0s ease-in;
+  top: 100%;
+  left: 15%;
+  transform: translate(-50%, -50%);
 }
 .proyectos .crud .texto-crud,
 .texto-java,
@@ -35,6 +48,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
   
 .crud:hover .texto-crud {
   opacity: 1; /* El texto se vuelve visible al pasar el mouse sobre la imagen */
@@ -68,6 +82,16 @@
   transition: opacity 0.9s ease-in; /* Transición suave para la opacidad */
   transform: scale(0.99);
 }
+.bannerASP:hover #asp-proyecto{
+  opacity: 0.5;
+  transition: opacity 0.9s ease-in; /* Transición suave para la opacidad */
+  transform: scale(0.99);
+}
+.bannerASP:hover .texto-asp{
+  opacity: 1; /* El texto se vuelve visible al pasar el mouse sobre la imagen */
+}
+
+
 @media only screen and (max-width: 768px) {
   .proyectos {
     flex-direction: row;
@@ -77,6 +101,7 @@
 
   .crud,
   .java,
+  .bannerASP,
   .bannerCsharp {
     min-width: 100vw;
     max-width: 100vw;  
@@ -84,6 +109,7 @@
 
   .crud:hover .texto-crud,
   .java:hover .texto-java,
+  .bannerASP:hover .texto-asp,
   .bannerCsharp:hover .texto-c {
   opacity: 1;
 }
