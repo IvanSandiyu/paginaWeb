@@ -6,7 +6,7 @@ import gmail from "../imagenes/gmail.svg";
 const descargarCurriculum = () => {
   const enlaceTemporal = document.createElement('a');
   // Asignar la URL del archivo a descargar al atributo 'href' del enlace
-  enlaceTemporal.href = "https://drive.google.com/file/d/1J9X_hTNwkM0ftT3AxQUV7nDBYMvhD85u/view?usp=drive_link"
+  enlaceTemporal.href = "https://drive.google.com/file/d/1ts_mBinFyYUVPl3--CFGR61kDFZ7mb-d/view?usp=sharing"
   enlaceTemporal.target = "_blank"
   enlaceTemporal.download = "CV_IvanSandiyu2024.pdf"; 
   enlaceTemporal.click();
